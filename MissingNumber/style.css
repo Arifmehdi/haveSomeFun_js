@@ -1,0 +1,21 @@
+.im{
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    display: inline;
+    margin-left: 10px;
+    border-radius: 50%;
+    
+
+}
+
+h2{
+    background-color: yellowgreen;
+    width: 25%;
+    display: inline
+}
+
+em{
+    height: 20px;
+    margin-top: 20px;
+}

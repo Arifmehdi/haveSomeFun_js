@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>:: Find Missing Number ::</title>
+
+
+</head>
+<body>
+    
+
+
+
+
+    <h2>Find Missing Number  </h2>
+  <img src="pic/find.gif" alt="" class="im">
+
+  <div class="em"></div>
+  <P><b>Your number's are : </b><span id="result"></span></P>
+  <P><b>And missing numbers are : </b><span id="get"></span></P>
+
+
+<script>
+    var number = [16,25,36,56,30, 40] + ' [ You just put your number here ]'; 
+    var count = 99;
+    var missing = new Array();
+
+    for(i=1; i<=count; i++){
+        if(number.indexOf(i) == -1)
+        missing.push(i);
+        // document.write(i+',');
+    }
+console.log(typeof(missing));
+
+var info = '';
+for(var a in missing){if(missing[a]>9) info+=  missing[a] + ' '; }
+
+console.log(info);
+
+    document.getElementById('result').innerHTML= number;
+    document.getElementById('get').innerHTML = info;
+    // document.write(missing);
+</script>
+
+
+</body>
+</html>
